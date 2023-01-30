@@ -1,0 +1,50 @@
+# Write a program that generates and prints 50 random integers, each between 3 and 6.
+import random
+import math
+for i in range(50):
+    rand_num = random.randint(3, 6)
+    print(rand_num, end=",")
+
+
+# Write a program that asks the user to enter two numbers, x and y , and computes | x − y | /  x + y
+entered_x = int(input("Enter number 'x'. "))
+entered_y = int(input("Enter number 'y'. "))
+result = abs(entered_x-entered_y) / (entered_x + entered_y)
+print(result)
+
+# Write a program that checks if a string is a palindrome.
+entered_word = input("Enter a word. ")
+if entered_word == entered_word[::-1]:
+    print("The word is palindrome.")
+else:
+    print("The word is not palindrome.")
+
+# Write a program that takes a list of numbers and calculates the sum of its elements.
+
+list_of_numbers = input("Enter a list of numbers separated by a comma.")
+entered_list = list_of_numbers.split(",")
+sum_list = 0
+for i in range(len(entered_list)):
+    sum_list += int(entered_list[i])
+print(sum_list)
+
+
+# Write a program that takes a list of numbers and returns the largest number in the list.
+entered_numbers = input("Enter a list of numbers separated by a comma. ")
+created_list = entered_numbers.split(",")
+max_number = 0
+for i in range(len(created_list)):
+    if int(created_list[i]) >= max_number:
+        max_number = int(created_list[i])
+print(max_number)
+
+
+# Write a program that reverses a string.
+entered_string = input("Enter a word. ")
+print(entered_string[::-1])
+
+# Write a program that calculates the area of a circle given its radius.
+given_radius = int(input("Enter radius. "))
+circle_area = math.pi * given_radius ** 2
+print(circle_area)
+
